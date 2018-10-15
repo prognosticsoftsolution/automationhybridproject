@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="RegressionSuite" duration-ms="58858" started-at="2018-10-10T10:47:31Z" finished-at="2018-10-10T10:48:30Z">
+    <groups>
+    </groups>
+    <test name="RegressionTest" duration-ms="58858" started-at="2018-10-10T10:47:31Z" finished-at="2018-10-10T10:48:30Z">
+      <class name="testcases.VerifyLoginPageWithReports">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.VerifyLoginPageWithReports@4c70fda8]" name="setUp" is-config="true" duration-ms="13722" started-at="2018-10-10T16:17:31Z" finished-at="2018-10-10T16:17:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="homePageTest()[pri:0, instance:testcases.VerifyLoginPageWithReports@4c70fda8]" name="homePageTest" duration-ms="2066" started-at="2018-10-10T16:17:45Z" finished-at="2018-10-10T16:17:47Z">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Cannot get a text value from a numeric cell]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Cannot get a text value from a numeric cell
+	at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:994)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getRichStringCellValue(XSSFCell.java:399)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue(XSSFCell.java:351)
+	at dataProvider.ExcelDataProvider.getData(ExcelDataProvider.java:26)
+	at testcases.VerifyLoginPageWithReports.homePageTest(VerifyLoginPageWithReports.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.VerifyLoginPageWithReports@4c70fda8]" name="teardown" is-config="true" duration-ms="1014" started-at="2018-10-10T16:17:47Z" finished-at="2018-10-10T16:17:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcases.VerifyLoginPageWithReports -->
+      <class name="testcases.VerifyLoginPageWithSC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.VerifyLoginPageWithSC@224edc67]" name="setUp" is-config="true" duration-ms="12710" started-at="2018-10-10T16:18:14Z" finished-at="2018-10-10T16:18:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="homePageTest()[pri:0, instance:testcases.VerifyLoginPageWithSC@224edc67]" name="homePageTest" duration-ms="1346" started-at="2018-10-10T16:18:26Z" finished-at="2018-10-10T16:18:28Z">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Cannot get a text value from a numeric cell]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Cannot get a text value from a numeric cell
+	at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:994)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getRichStringCellValue(XSSFCell.java:399)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue(XSSFCell.java:351)
+	at dataProvider.ExcelDataProvider.getData(ExcelDataProvider.java:26)
+	at testcases.VerifyLoginPageWithSC.homePageTest(VerifyLoginPageWithSC.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcases.VerifyLoginPageWithSC@224edc67]" name="teardown" is-config="true" duration-ms="2713" started-at="2018-10-10T16:18:28Z" finished-at="2018-10-10T16:18:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=homePageTest status=FAILURE method=VerifyLoginPageWithSC.homePageTest()[pri:0, instance:testcases.VerifyLoginPageWithSC@224edc67] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcases.VerifyLoginPageWithSC -->
+      <class name="testcases.VerifyLoginPage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.VerifyLoginPage@26be92ad]" name="setUp" is-config="true" duration-ms="12034" started-at="2018-10-10T16:17:59Z" finished-at="2018-10-10T16:18:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="homePageTest()[pri:0, instance:testcases.VerifyLoginPage@26be92ad]" name="homePageTest" duration-ms="1427" started-at="2018-10-10T16:18:11Z" finished-at="2018-10-10T16:18:13Z">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Cannot get a text value from a numeric cell]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Cannot get a text value from a numeric cell
+	at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:994)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getRichStringCellValue(XSSFCell.java:399)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue(XSSFCell.java:351)
+	at dataProvider.ExcelDataProvider.getData(ExcelDataProvider.java:26)
+	at testcases.VerifyLoginPage.homePageTest(VerifyLoginPage.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.VerifyLoginPage@26be92ad]" name="teardown" is-config="true" duration-ms="638" started-at="2018-10-10T16:18:13Z" finished-at="2018-10-10T16:18:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcases.VerifyLoginPage -->
+      <class name="testcases.VerifyHomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.VerifyHomePageTest@39aeed2f]" name="setUp" is-config="true" duration-ms="10492" started-at="2018-10-10T16:17:48Z" finished-at="2018-10-10T16:17:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="homePageTest()[pri:0, instance:testcases.VerifyHomePageTest@39aeed2f]" name="homePageTest" duration-ms="14" started-at="2018-10-10T16:17:59Z" finished-at="2018-10-10T16:17:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.VerifyHomePageTest@39aeed2f]" name="teardown" is-config="true" duration-ms="654" started-at="2018-10-10T16:17:59Z" finished-at="2018-10-10T16:17:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcases.VerifyHomePageTest -->
+    </test> <!-- RegressionTest -->
+  </suite> <!-- RegressionSuite -->
+</testng-results>
